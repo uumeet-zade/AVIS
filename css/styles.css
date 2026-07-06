@@ -5,6 +5,10 @@
     --color-text: #111111;
     --color-text-light: #555555;
     --color-border: #E0E0E0;
+
+    --color-footer-bg: #111111;
+    --color-footer-text: #FFFFFF;
+    --color-footer-text-muted: #CCCCCC;
     
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
@@ -18,6 +22,10 @@
     --color-text: #EDEDED;
     --color-text-light: #A0A0A0;
     --color-border: #333333;
+
+    --color-footer-bg: #050505;
+    --color-footer-text: #EDEDED;
+    --color-footer-text-muted: #888888;
 }
 
 * {
@@ -260,10 +268,11 @@ img {
    ========================================================================== */
 
 .site-footer {
-    background-color: var(--color-text);
-    color: var(--color-bg);
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
     padding: 4rem 1rem;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-content {
@@ -287,18 +296,18 @@ img {
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #AAA;
+    color: var(--color-footer-text-muted);
 }
 
 .mission {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #CCC;
+    color: var(--color-footer-text-muted);
 }
 
 .copyright {
     font-size: 0.85rem;
-    color: #888;
+    color: var(--color-footer-text-muted);
 }
 
 /* ==========================================================================
