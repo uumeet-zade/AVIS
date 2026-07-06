@@ -30,9 +30,14 @@ This document describes what to build. It is a design spec, not code - intended 
 
 Guidance: white should be the dominant surface color (masthead background, page background). Rose red should be used sparingly and deliberately - for emphasis, category tags, the masthead underline, and interactive elements - not as a large background fill. Black carries the actual reading weight (text, borders, footer).
 
+## 4. UI/UX Elements
+- **Navigation Bar:** Fixed at top. Clean white background. Simple text links. Must include a dynamic date element.
+- **Dynamic Caprican Date:** **CRITICAL INSTRUCTION:** Always fetch the current Caprican date directly from the Miraheze Wiki API using the cached `Main_Page` (e.g., `action=parse&page=Main_Page&prop=text`) to perfectly sync with the wiki's cache cycle. Do NOT calculate the date locally, and do NOT bypass the page cache, as the site must match exactly what users see on the wiki.
+- **Top Story:** A massive splash area under the nav. Big headline, wide image, snippet of text.
+
 ---
 
-## 4. Typography
+## 5. Typography
 
 - **Headlines / display text:** Playfair Display (serif), fallback: serif
 - **Body text / UI / navigation:** Inter (sans-serif), fallback: sans-serif
