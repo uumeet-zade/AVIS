@@ -17,6 +17,7 @@
 }
 
 [data-theme="dark"] {
+    --color-accent: #FF7080;
     --color-bg: #111111;
     --color-bg-alt: #1A1A1A;
     --color-text: #EDEDED;
