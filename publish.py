@@ -17,7 +17,7 @@ def generate_grid_article(article):
                 <p class="summary">{article['summary']}</p>
                 <div class="meta">
                     <span class="byline">{article['byline']}</span>
-                    <span class="timestamp">{article['timestamp']}</span>
+                    <span class="timestamp live-caprica-date">Syncing universe clock...</span>
                 </div>
             </article>
 '''
@@ -31,7 +31,7 @@ def generate_top_story(article):
                 <p class="summary">{article['summary']}</p>
                 <div class="meta">
                     <span class="byline">{article['byline']}</span>
-                    <span class="timestamp">{article['timestamp']}</span>
+                    <span class="timestamp live-caprica-date">Syncing universe clock...</span>
                 </div>
             </div>
 '''
@@ -67,7 +67,7 @@ def generate_article_page(article):
             <h1 class="headline" style="font-size: 2.5rem; margin-bottom: 1rem;">{article['headline']}</h1>
             <div class="meta" style="margin-bottom: 2rem; border-bottom: 1px solid var(--color-border); padding-bottom: 1rem;">
                 <span class="byline">{article['byline']}</span>
-                <span class="timestamp">{article['timestamp']}</span>
+                <span class="timestamp live-caprica-date">Syncing universe clock...</span>
             </div>
             <div class="article-body" style="font-size: 1.1rem; line-height: 1.8;">
                 <p>{content}</p>
