@@ -43,4 +43,4 @@ When drafting articles, you must strictly adhere to the following rules:
 3. **Avoid Cliche Phrasing:** Never use the "is not X - but Y" phrasing (e.g., "The issue is not the budget - but the timeline."). Write straightforward, professional copy.
 
 ## Article Timestamps
-For the timestamp, use the script made to get the in-Caprica fictional calendar (i.e. use the `live-caprica-date` class). Nothing else.
+To find out what the current in-Caprica fictional date is, use the script made to get the calendar (i.e. use the `live-caprica-date` class in a scratchpad or reference the site header). However, the timestamp inside the actual article files MUST be a hardcoded, static string (e.g., `29 March 2058, 14:30`) so it does not update dynamically to the present day. Do NOT leave the `<span class="live-caprica-date">` tag inside article timestamps.
