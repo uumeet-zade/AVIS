@@ -7,6 +7,7 @@ This document describes what to build. It is a design spec, not code - intended 
 ## 1. Identity Recap
 
 - **Name:** AVIS (Agence pour la Veille et l'Information Sociale)
+- **Founder:** Aldric von Reichel
 - **Motto:** "The Record for the People"
 - **Positioning:** Independent news agency, sympathetic to the Social Democratic Alliance (SDA), critical of conservative establishment power. Blends fast wire-service reporting with longform investigative analysis.
 - **Standalone site** - does not need to link to or match the SDA party website's structure, only reuse its typography for visual consistency within the Caprica universe.

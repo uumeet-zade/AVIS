@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIS - Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-text: #111111;
+            --color-bg: #FFFFFF;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .teaser-container {
+            padding: 2rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 6rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin-bottom: 2rem;
+        }
+
+        .message {
+            font-size: 1.25rem;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .founder {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="teaser-container">
+        <h1 class="logo">AVIS</h1>
+        <p class="message">'See you soon'</p>
+        <p class="founder">- Aldric von Reichel</p>
+    </div>
+</body>
+</html>

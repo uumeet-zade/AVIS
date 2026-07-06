@@ -2,6 +2,7 @@
 
 **Name:** AVIS
 **Full name (French/Latin-style):** Agence pour la Veille et l'Information Sociale
+**Founder:** Aldric von Reichel
 **Motto:** The Record for the People
 **Alternate Latin motto:** Vigilat Populus ("The People Watch")
 **Alternate Latin motto (sharper):** Nulla Potestas Sine Vigilia ("No Power Without Vigilance")
