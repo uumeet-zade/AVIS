@@ -1,0 +1,8 @@
+# Future agents instructions
+.agents/
+
+# Project documentation & notes
+docs/AVIS_branding.md
+docs/AVIS_placeholder_articles.md
+docs/AVIS_website_design_brief.md
+docs/*.xlsx
