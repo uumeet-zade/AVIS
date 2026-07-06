@@ -69,7 +69,11 @@ Each placeholder article needs: headline, category tag, one-paragraph summary, b
 
 ## 7. Tone Notes for Any Placeholder Copy
 
-Writing style should read like real wire-service journalism: short declarative sentences, attributed claims, neutral-sounding phrasing even when the underlying analysis is pointed. Avoid party-slogan language — AVIS is editorially independent, not an SDA mouthpiece, even though it's sympathetic to SDA's politics.
+Writing style should read like real wire-service journalism: short declarative sentences, attributed claims, neutral-sounding phrasing even when the underlying analysis is pointed. Avoid party-slogan language - AVIS is editorially independent, not an SDA mouthpiece, even though it's sympathetic to SDA's politics.
+
+**Stylistic Rules:**
+- Never use em dashes; always stick to hyphens (-).
+- Do not use the phrasing "is not X - but it is Y" or similar structures.
 
 ---
 

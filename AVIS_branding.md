@@ -13,6 +13,7 @@
 - Openly sympathetic to SDA's social-democratic and republican program
 - Explicitly skeptical of conservative-establishment power structures, aristocratic holdovers, and unaccountable institutions
 - Blends wire-service rigor (fast, sourced, factual dispatches) with watchdog analysis (longform pieces scrutinizing power)
+- Stylistic rules: Never use em dashes; use hyphens (-) instead. Do not use the phrasing "is not X - but it is Y" or similar structures.
 
 **Structure:**
 - **Agence AVIS** — wire/dispatch arm (short factual reports, breaking news style)
