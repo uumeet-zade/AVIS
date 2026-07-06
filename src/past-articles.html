@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVIS - The Record for the People</title>
+    <title>AVIS - Past Articles</title>
     <meta name="description" content="AVIS - Agence pour la Veille et l'Information Sociale. Independent news agency serving Caprica.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="site-header">
@@ -18,8 +18,9 @@
         </div>
         <nav class="top-nav">
             <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Politics</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="current-articles.html">Current</a></li>
+                <li><a href="past-articles.html" class="active">Past</a></li>
                 <li><a href="#">Analysis</a></li>
                 <li><a href="#">Society</a></li>
                 <li><a href="#">World</a></li>
@@ -29,25 +30,8 @@
     </header>
 
     <main class="site-content">
-        <!-- Top Story Block -->
-        <section class="top-story">
-            <div class="top-story-content">
-                <span class="category-tag">POLITICS</span>
-                <h2 class="headline"><a href="#">Conservative Bloc Resists Oversight Reforms, Cites "Institutional Tradition"</a></h2>
-                <p class="summary">Lawmakers aligned with the conservative establishment have declined to advance a package of transparency measures put forward this session, arguing the reforms would undermine "institutional tradition" within the chamber. Critics of the bloc's position note that similar language has been used in past sessions to delay disclosure requirements now considered standard practice in comparable legislatures.</p>
-                <div class="meta">
-                    <span class="byline">By Elsa Rourke, AVIS Politics Desk</span>
-                    <span class="timestamp">06 July, 14:12</span>
-                </div>
-                <div class="placeholder-note">* Placeholder - full reporting to follow *</div>
-            </div>
-            <div class="top-story-image">
-                <div class="image-placeholder"></div>
-            </div>
-        </section>
-
-        <!-- Article Grid -->
-        <section class="article-grid">
+        <section class="article-grid" style="margin-top: 2rem;">
+            <!-- Dummy content for Past Articles -->
             <article class="grid-story">
                 <span class="category-tag">ANALYSIS</span>
                 <h3 class="headline"><a href="#">What the Social Democratic Alliance's Platform Actually Proposes, Line by Line</a></h3>
@@ -57,17 +41,6 @@
                     <span class="timestamp">05 July, 09:40</span>
                 </div>
                 <div class="placeholder-note">* Placeholder - full analysis to follow *</div>
-            </article>
-
-            <article class="grid-story">
-                <span class="category-tag">DISPATCH</span>
-                <h3 class="headline"><a href="#">Committee Vote Postponed Until Thursday</a></h3>
-                <p class="summary">The oversight committee vote originally scheduled for this afternoon has been postponed until Thursday, according to a notice issued by the committee clerk. No reason was given for the delay. AVIS will provide updates as they become available.</p>
-                <div class="meta">
-                    <span class="byline">AVIS Wire</span>
-                    <span class="timestamp">06 July, 16:03</span>
-                </div>
-                <div class="placeholder-note">* Placeholder content *</div>
             </article>
 
             <article class="grid-story">
@@ -94,7 +67,7 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" style="margin-top: auto;">
         <div class="footer-content">
             <div class="footer-brand">
                 <h2 class="footer-logo">AVIS</h2>
