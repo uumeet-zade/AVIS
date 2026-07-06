@@ -4,7 +4,7 @@ Ready-to-use placeholder content for the website build. Each entry includes cate
 
 ---
 
-## 1. TOP STORY — Politics
+## 1. TOP STORY - Politics
 
 **Category:** POLITICS
 
@@ -17,11 +17,11 @@ Lawmakers aligned with the conservative establishment have declined to advance a
 
 The measures, which would require itemized disclosure of committee funding sources, were introduced with cross-bench support but stalled in procedural committee. AVIS has requested comment from committee leadership; no response had been received at time of publication.
 
-*[Placeholder — full reporting to follow]*
+*[Placeholder - full reporting to follow]*
 
 ---
 
-## 2. AVIS Analyse — Longform
+## 2. AVIS Analyse - Longform
 
 **Category:** ANALYSIS
 
@@ -34,11 +34,11 @@ The Social Democratic Alliance's platform has drawn both enthusiasm and skeptici
 
 Several provisions merit closer scrutiny than they have so far received, particularly those concerning the relationship between elected bodies and standing institutions. AVIS Analyse will examine each pillar of the platform in a forthcoming series, beginning with its governance reforms.
 
-*[Placeholder — full analysis to follow]*
+*[Placeholder - full analysis to follow]*
 
 ---
 
-## 3. Wire Dispatch — Breaking/Short
+## 3. Wire Dispatch - Breaking/Short
 
 **Category:** DISPATCH
 
@@ -64,7 +64,7 @@ Waitlists for public housing have lengthened for the third consecutive quarter, 
 
 Both explanations point to the same underlying bottleneck: approvals. AVIS reviewed public records showing average approval times have increased notably over the past year, though the housing authority disputes that this fully accounts for the backlog.
 
-*[Placeholder — full reporting to follow]*
+*[Placeholder - full reporting to follow]*
 
 ---
 
@@ -81,4 +81,4 @@ Trade negotiations between neighboring administrations resumed this week after s
 
 Analysts caution that the resumption of talks does not guarantee resolution, noting that similar negotiations have previously restarted and stalled multiple times without reaching a final accord.
 
-*[Placeholder — full reporting to follow]*
+*[Placeholder - full reporting to follow]*

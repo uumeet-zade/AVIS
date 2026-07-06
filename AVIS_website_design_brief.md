@@ -1,6 +1,6 @@
-# AVIS Website — Design Brief
+# AVIS Website - Design Brief
 
-This document describes what to build. It is a design spec, not code — intended to guide an AI coding assistant (e.g. Google Antigravity / Gemini) in generating the site.
+This document describes what to build. It is a design spec, not code - intended to guide an AI coding assistant (e.g. Google Antigravity / Gemini) in generating the site.
 
 ---
 
@@ -9,13 +9,13 @@ This document describes what to build. It is a design spec, not code — intende
 - **Name:** AVIS (Agence pour la Veille et l'Information Sociale)
 - **Motto:** "The Record for the People"
 - **Positioning:** Independent news agency, sympathetic to the Social Democratic Alliance (SDA), critical of conservative establishment power. Blends fast wire-service reporting with longform investigative analysis.
-- **Standalone site** — does not need to link to or match the SDA party website's structure, only reuse its typography for visual consistency within the Caprica universe.
+- **Standalone site** - does not need to link to or match the SDA party website's structure, only reuse its typography for visual consistency within the Caprica universe.
 
 ---
 
 ## 2. Visual Mood
 
-**Style:** Modern wire-service — think Reuters/AP. Clean, white-dominant, confident use of a bold accent color. Should feel authoritative, fast-moving, and serious — not decorative or playful.
+**Style:** Modern wire-service - think Reuters/AP. Clean, white-dominant, confident use of a bold accent color. Should feel authoritative, fast-moving, and serious - not decorative or playful.
 
 ---
 
@@ -24,10 +24,10 @@ This document describes what to build. It is a design spec, not code — intende
 | Role | Color | Notes |
 |---|---|---|
 | Primary accent | Rose Red | Used for headline highlights, section labels, links, key UI accents (buttons, active states, "breaking" tags) |
-| Secondary | White | Dominant background color — clean, high contrast, newspaper-like |
+| Secondary | White | Dominant background color - clean, high contrast, newspaper-like |
 | Tertiary | Black | Body text, headlines, structural lines/borders |
 
-Guidance: white should be the dominant surface color (masthead background, page background). Rose red should be used sparingly and deliberately — for emphasis, category tags, the masthead underline, and interactive elements — not as a large background fill. Black carries the actual reading weight (text, borders, footer).
+Guidance: white should be the dominant surface color (masthead background, page background). Rose red should be used sparingly and deliberately - for emphasis, category tags, the masthead underline, and interactive elements - not as a large background fill. Black carries the actual reading weight (text, borders, footer).
 
 ---
 
@@ -36,7 +36,7 @@ Guidance: white should be the dominant surface color (masthead background, page 
 - **Headlines / display text:** Playfair Display (serif), fallback: serif
 - **Body text / UI / navigation:** Inter (sans-serif), fallback: sans-serif
 
-This matches the existing SDA party website for visual consistency across the Caprica universe. Headlines should feel weighty and editorial (serif); everything else — nav, bylines, captions, article body copy — should be clean and highly readable (Inter).
+This matches the existing SDA party website for visual consistency across the Caprica universe. Headlines should feel weighty and editorial (serif); everything else - nav, bylines, captions, article body copy - should be clean and highly readable (Inter).
 
 ---
 
@@ -45,11 +45,11 @@ This matches the existing SDA party website for visual consistency across the Ca
 **Style:** Classic newspaper front page.
 
 Structure, top to bottom:
-1. **Masthead** — AVIS wordmark (Playfair Display, large), motto "The Record for the People" beneath it in smaller Inter text, rose red underline/divider beneath the masthead.
-2. **Top navigation bar** — sections such as: Home, Politics, Analysis (for "AVIS Analyse" longform content), Society, World, About AVIS. Clean horizontal bar, Inter font, black text, rose red highlight on hover/active.
-3. **Top story block** — one large featured headline with image placeholder, a short summary/lede, byline, and timestamp. This is the visual anchor of the page.
-4. **Article grid** — below the top story, a grid of 4–6 secondary stories, each with: category tag (rose red small label, e.g. "POLITICS" or "ANALYSIS"), headline (Playfair Display), one-line summary (Inter), byline, timestamp.
-5. **Footer** — AVIS name, motto repeated small, mission statement in one line, copyright/fictional-universe note.
+1. **Masthead** - AVIS wordmark (Playfair Display, large), motto "The Record for the People" beneath it in smaller Inter text, rose red underline/divider beneath the masthead.
+2. **Top navigation bar** - sections such as: Home, Politics, Analysis (for "AVIS Analyse" longform content), Society, World, About AVIS. Clean horizontal bar, Inter font, black text, rose red highlight on hover/active.
+3. **Top story block** - one large featured headline with image placeholder, a short summary/lede, byline, and timestamp. This is the visual anchor of the page.
+4. **Article grid** - below the top story, a grid of 4–6 secondary stories, each with: category tag (rose red small label, e.g. "POLITICS" or "ANALYSIS"), headline (Playfair Display), one-line summary (Inter), byline, timestamp.
+5. **Footer** - AVIS name, motto repeated small, mission statement in one line, copyright/fictional-universe note.
 
 ---
 
@@ -80,5 +80,5 @@ Writing style should read like real wire-service journalism: short declarative s
 ## 8. Out of Scope for This Brief
 
 - No logo/icon design specified yet (site can use wordmark-only masthead for now)
-- No mobile-specific layout instructions given — standard responsive behavior is fine
-- No backend/CMS — static/placeholder content only at this stage
+- No mobile-specific layout instructions given - standard responsive behavior is fine
+- No backend/CMS - static/placeholder content only at this stage
