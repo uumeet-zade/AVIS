@@ -1,5 +1,33 @@
 [
   {
+    "id": "ins-economic-report",
+    "category": "INSIDER",
+    "headline": "Growth Looks Good on Paper: A Look In the Details of 2057 Economic Report",
+    "summary": "The government's 2057 economic release tells two different stories. Caprica grew, with GDP up 4.1% to 5.286 trillion Argents. However, spending outpaced revenue, resulting in a deficit of 6.5% of GDP financed entirely through borrowing. This pushed debt-to-GDP to 90.31% and led rating agencies to hold Caprica's credit rating at BBB+ (stable)-the lowest rating in 57 years.",
+    "byline": "By AVIS Insider Desk",
+    "timestamp": "9 April 2058, 16:30",
+    "is_top_story": false
+  },
+  {
+    "id": "soc-ambrosia-cola",
+    "category": "SOCIETY",
+    "headline": "Local Man Wins Lifetime Supply of Ambrosia Cola, Discovers He's Diabetic Three Days Later",
+    "summary": "What began as the happiest day of Denny Okafor's life ended in what his physician described as \"A joke from the universe itself.\" Okafor, who won the grand prize in Ambrosia Cola's \"Fizz or Fortune\" sweepstakes last Tuesday, was diagnosed with Type 2 diabetes the following Friday. Ambrosia Cola has offered to convert the remaining 1,197 crates into store credit, which Okafor describes as \"somehow worse.\"",
+    "byline": "By Nadia Voss, AVIS Society Desk",
+    "timestamp": "9 April 2058, 14:05",
+    "is_top_story": false
+  },
+  {
+    "id": "pol-myrati-fragile-turning-point",
+    "category": "POLITICS",
+    "headline": "AVIS FIELD REPORT: Myrati - A Fragile Turning Point",
+    "summary": "After weeks of grinding, inconclusive engagements, the rural theater in Myrati has finally produced a tangible shift in momentum. Ex-ODU troops successfully located and destroyed a major separatist ammunition cache. Meanwhile, a mass-casualty attack by the MLF on the Collective Nightclub in Central Montiablo has claimed 13 lives, including eight CIVIC employees. In the southern waters, an extensive smuggling and human trafficking network linked to Los Navegantes Del Mar has been uncovered, raising fears of connections to the MLF.",
+    "content": "The full report details multiple front developments. The rural theater saw a breakthrough as Ex-ODU troops destroyed a major separatist ammo cache. In Central Montiablo, a tragic mass-casualty attack on the Collective Nightclub by the MLF resulted in 13 deaths, including 8 CIVIC employees. DCNI Al Bush addressed the nation, vowing resolve. Down south, coast guard units uncovered an extensive smuggling and human trafficking network tied to Los Navegantes Del Mar, with potential links to funding the MLF.",
+    "byline": "By Elsa Rourke, AVIS Politics Desk",
+    "timestamp": "9 April 2058, 10:00",
+    "is_top_story": true
+  },
+  {
     "id": "pol-jasmin-bush",
     "category": "POLITICS",
     "headline": "Prime Minister Announces Disappearance of Justice Balls and MP Balls; JM Leader Found Amid Bizarre Kidnapping Claims",
