@@ -109,7 +109,7 @@ if len(articles) > 0:
 else:
     top_story_article = None
     
-index_grid_articles = [a for a in articles if a != top_story_article][:4]
+index_grid_articles = [a for a in articles if a != top_story_article][:2]
 
 index_top_html = generate_top_story(top_story_article) if top_story_article else ""
 index_grid_html = "".join(generate_grid_article(a) for a in index_grid_articles)
