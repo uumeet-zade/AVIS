@@ -14,9 +14,9 @@ When updating or verifying the date on the website, you MUST use the Caprica Mir
 
 ## News Categories
 AVIS is operated by a single person and only covers three specific categories of news. When creating, tagging, or organizing articles, you must ONLY use the following 3 categories:
-1. **Politics:** The formal, watchdog beat. Focuses on legislation, institutional maneuvers, and the exercise of power, taking a skeptical, critical lens toward conservative or establishment factions.
-2. **Insider:** The investigative, "behind closed doors" scoop. This category is for leaked memos, exclusive drafts, and exposing hidden agendas or unpublicized conflicts.
-3. **Society:** The satirical, absurdist, and humorous beat. Focuses on hyper-local, bizarre, or tongue-in-cheek events.
+1. **News:** The formal, watchdog beat. Focuses on hard news, legislation, institutional maneuvers, and global events.
+2. **Opinion:** The editorial beat. Focuses on analysis, political perspectives, and ideological arguments.
+3. **Culture:** The society beat. Focuses on arts, hyper-local events, satire, and lifestyle.
 
 Do **NOT** use legacy categories such as "World," "Analysis," or "Dispatch."
 

@@ -17,7 +17,7 @@ const gridArticles = allArticles.filter(a => a.id !== spotlightArticle.id).slice
         <section class="spotlight-section">
             <ArticleCard 
                 title={spotlightArticle.data.title}
-                url={`/articles/${spotlightArticle.id}`}
+                url={`${import.meta.env.BASE_URL}articles/${spotlightArticle.id}`}
                 category={spotlightArticle.data.category}
                 summary={spotlightArticle.data.summary}
                 byline={spotlightArticle.data.author}
@@ -30,7 +30,7 @@ const gridArticles = allArticles.filter(a => a.id !== spotlightArticle.id).slice
             {gridArticles.map(article => (
                 <ArticleCard 
                     title={article.data.title}
-                    url={`/articles/${article.id}`}
+                    url={`${import.meta.env.BASE_URL}articles/${article.id}`}
                     category={article.data.category}
                     summary={article.data.summary}
                     byline={article.data.author}

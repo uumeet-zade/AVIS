@@ -1,7 +1,7 @@
 ---
 title: "A New Green Dawn: Adriana Flash Unveils the Democratic Greens"
 summary: "Following her departure from Progressive Caprica, former Prime Minister Adriana Flash has officially launched the Democratic Greens of Caprica, promising a radical shift toward eco-liberalism and institutional renewal."
-category: "Politics"
+category: "News"
 author: "By Ecologica Political Desk"
 timestamp: "6 March 2066, 09:00"
 isSpotlight: true

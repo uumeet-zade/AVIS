@@ -5,9 +5,9 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   return [
-    { params: { category: 'politics' } },
-    { params: { category: 'insider' } },
-    { params: { category: 'society' } },
+    { params: { category: 'news' } },
+    { params: { category: 'opinion' } },
+    { params: { category: 'culture' } },
   ];
 }
 
@@ -27,7 +27,7 @@ const filteredArticles = allArticles.filter(a => a.data.category.toLowerCase() =
                 {filteredArticles.map(article => (
                     <ArticleCard 
                         title={article.data.title}
-                        url={`/articles/${article.id}`}
+                        url={`${import.meta.env.BASE_URL}articles/${article.id}`}
                         category={article.data.category}
                         summary={article.data.summary}
                         byline={article.data.author}

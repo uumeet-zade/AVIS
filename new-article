@@ -1,0 +1,65 @@
+#!/usr/bin/env node
+import fs from 'fs';
+import path from 'path';
+
+const slug = process.argv[2];
+
+if (!slug) {
+  console.error('Please provide a file name (slug) for the article.');
+  console.error('Example: npm run new-article news-my-first-article');
+  process.exit(1);
+}
+
+const filePath = path.join(process.cwd(), 'src', 'content', 'articles', `${slug}.md`);
+
+if (fs.existsSync(filePath)) {
+  console.error(`❌ File already exists: src/content/articles/${slug}.md`);
+  process.exit(1);
+}
+
+// Fetch the live date from Caprica Miraheze Wiki
+async function fetchCapricaDate() {
+  try {
+    const response = await fetch('https://caprica.miraheze.org/w/api.php?action=parse&page=Main_Page&prop=text&format=json&origin=*');
+    const data = await response.json();
+    const htmlString = data.parse.text['*'];
+    
+    // Extract the date after "Today is:"
+    const match = htmlString.match(/Today is:\s*<\/b>\s*<i>([^<]+)<\/i>/i) || htmlString.match(/Today is:\s*<[^>]+>([^<]+)/i) || htmlString.match(/Today is:\s*([^<\n]+)/i);
+    
+    if (match && match[1]) {
+      return match[1].replace(/<[^>]*>?/gm, '').trim();
+    }
+  } catch (err) {
+    console.error('⚠️ Warning: Could not fetch live Caprica date. Falling back to placeholder.');
+  }
+  return "DD Month YYYY";
+}
+
+async function createTemplate() {
+  console.log('Syncing universe clock...');
+  const capricaDate = await fetchCapricaDate();
+
+  const template = `---
+title: "Your Headline Here"
+summary: "A brief 1-2 sentence summary of the article."
+category: "News" # Must be exactly: News, Opinion, or Culture
+author: "By Ecologica Desk"
+timestamp: "${capricaDate}, 12:00"
+isSpotlight: false
+---
+
+Write your article content here. 
+
+Remember to adhere to C1 level English, use standard hyphens instead of em-dashes, and avoid 'not X, but Y' phrasing.
+`;
+
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, template, 'utf8');
+  
+  console.log(`✅ Successfully created new article template!`);
+  console.log(`📁 Location: src/content/articles/${slug}.md`);
+  console.log(`📅 Timestamp hardcoded to: ${capricaDate}, 12:00`);
+}
+
+createTemplate();

@@ -1,7 +1,7 @@
 ---
 title: "Mandy Trottier Survives Norwynian Bombing: Former President Blinded in Left Eye Following Secret Diplomatic Mission"
 summary: "Former Caprican President Mandy Trottier has been located at a ranch near Cosne-d'Allier after a Rochelist terrorist group targeted her secretive convoy in Lusignon. Four Caprican security agents were killed in the blast."
-category: "Politics"
+category: "News"
 author: "By Ecologica Foreign Desk"
 timestamp: "6 March 2066, 14:00"
 isSpotlight: false
