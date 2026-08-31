@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return [
+    { params: { category: 'politics' } },
+    { params: { category: 'insider' } },
+    { params: { category: 'society' } },
+  ];
+}
+
+const { category } = Astro.params;
+const allArticles = await getCollection('articles');
+const filteredArticles = allArticles.filter(a => a.data.category.toLowerCase() === category);
+---
+
+<Layout title={category.charAt(0).toUpperCase() + category.slice(1)}>
+    <div class="container">
+        <h1 style="text-transform: uppercase; margin-bottom: 2rem; border-bottom: var(--border-thick); padding-bottom: 0.5rem; color: var(--c-primary);">{category}</h1>
+        
+        {filteredArticles.length === 0 ? (
+            <p>No articles found in this category.</p>
+        ) : (
+            <div class="grid">
+                {filteredArticles.map(article => (
+                    <ArticleCard 
+                        title={article.data.title}
+                        url={`/articles/${article.id}`}
+                        category={article.data.category}
+                        summary={article.data.summary}
+                        byline={article.data.author}
+                        timestamp={article.data.timestamp}
+                    />
+                ))}
+            </div>
+        )}
+    </div>
+</Layout>

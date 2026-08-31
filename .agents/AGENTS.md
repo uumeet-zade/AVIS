@@ -40,8 +40,9 @@ Or simply ask the user
 When drafting articles, you must strictly adhere to the following rules:
 1. **Always Verify Factions:** Before writing any article, you MUST check the current list of political parties in Caprica (via the Caprica Miraheze Wiki) to ensure you are referencing active and accurate factions.
 2. **No Em Dashes:** Do NOT use em dashes (`—`). Stick exclusively to standard hyphens (`-`).
-3. **Avoid Cliche Phrasing:** Never use the "is not X - but Y" phrasing (e.g., "The issue is not the budget - but the timeline."). Write straightforward, professional copy.
-4. **Paragraph Spacing:** Always separate paragraphs with a blank line to ensure readability (e.g., use `<br><br>` in JSON content or an empty line between `<p>` tags in HTML files).
+3. **Avoid Cliche & Negative/Positive Phrasing:** Never use the "is not X - but Y" phrasing (e.g., "The issue is not the budget - but the timeline."). Do NOT use the *negative*, *positive* phrasing, such as "Greens enter Parliament not as an insurgent startup, but as a seasoned player". Write straightforward, direct, professional copy.
+4. **C1 English Level:** Keep the vocabulary, sentence structure, and overall prose strictly at a C1 (Advanced) English level—sophisticated and professional, but not overly convoluted or archaic.
+5. **Paragraph Spacing:** Always separate paragraphs with a blank line to ensure readability (e.g., use `<br><br>` in JSON content or an empty line between `<p>` tags in HTML files).
 
 ## Article Timestamps
-To find out what the current in-Caprica fictional date is, use the script made to get the calendar (i.e. use the `live-caprica-date` class in a scratchpad or reference the site header). However, the timestamp inside the actual article files MUST be a hardcoded, static string (e.g., `29 March 2058, 14:30`) so it does not update dynamically to the present day. Do NOT leave the `<span class="live-caprica-date">` tag inside article timestamps.
+To find out what the current in-Caprica fictional date is, you MUST check the live date fetched from the Caprica Miraheze Wiki Main Page (e.g. `March 6, 2066`). The timestamp inside the actual article files MUST be a hardcoded, static string that matches this in-universe date at the time of writing (e.g., `6 March 2066, 14:30`). Do not use real-world dates, and do not leave dynamic tags like `<span class="live-caprica-date">` inside article markdown files.

@@ -1,12 +1,35 @@
-# Future agents instructions
-.agents/
+# Node/Astro
+node_modules/
+dist/
+.astro/
 
-# Project documentation & notes
-docs/AVIS_branding.md
-docs/AVIS_placeholder_articles.md
-docs/AVIS_website_design_brief.md
-docs/*.xlsx
+# Environment Variables
+.env
+.env.*
+!.env.example
 
 # OS generated files
 .DS_Store
-**/.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archives and old files (Not needed for the new website)
+avis_archive.zip
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Rules
+CLAUDE.md
+.agents/

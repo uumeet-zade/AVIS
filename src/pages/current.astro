@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles');
+// Chronological feed of the 3 most recent articles (we just take the first 3 for now)
+const currentArticles = allArticles.slice(0, 3);
+---
+
+<Layout title="Current">
+    <div class="container">
+        <h1 style="margin-bottom: 2rem; border-bottom: var(--border-thick); padding-bottom: 0.5rem;">Current Feed</h1>
+        <div class="grid">
+            {currentArticles.map(article => (
+                <ArticleCard 
+                    title={article.data.title}
+                    url={`/articles/${article.id}`}
+                    category={article.data.category}
+                    summary={article.data.summary}
+                    byline={article.data.author}
+                    timestamp={article.data.timestamp}
+                />
+            ))}
+        </div>
+    </div>
+</Layout>

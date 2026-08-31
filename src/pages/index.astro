@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles');
+
+// Sort by date (assuming we want newest first, though timestamps are strings. We will just sort them alphabetically for now, or assume the order returned/parsed. Since we have standard timestamps, let's just parse them or use a simple order).
+// For simplicity, we just use the spotlight flag and grab the rest.
+const spotlightArticle = allArticles.find(a => a.data.isSpotlight) || allArticles[0];
+const gridArticles = allArticles.filter(a => a.id !== spotlightArticle.id).slice(0, 2);
+---
+
+<Layout title="Home">
+    <div class="container">
+        
+        <section class="spotlight-section">
+            <ArticleCard 
+                title={spotlightArticle.data.title}
+                url={`/articles/${spotlightArticle.id}`}
+                category={spotlightArticle.data.category}
+                summary={spotlightArticle.data.summary}
+                byline={spotlightArticle.data.author}
+                timestamp={spotlightArticle.data.timestamp}
+                isSpotlight={true}
+            />
+        </section>
+
+        <section class="grid">
+            {gridArticles.map(article => (
+                <ArticleCard 
+                    title={article.data.title}
+                    url={`/articles/${article.id}`}
+                    category={article.data.category}
+                    summary={article.data.summary}
+                    byline={article.data.author}
+                    timestamp={article.data.timestamp}
+                />
+            ))}
+        </section>
+        
+    </div>
+</Layout>

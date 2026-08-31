@@ -1,0 +1,33 @@
+---
+interface Props {
+    title: string;
+    url: string;
+    category: string;
+    summary: string;
+    byline: string;
+    timestamp: string;
+    isSpotlight?: boolean;
+}
+
+const { title, url, category, summary, byline, timestamp, isSpotlight = false } = Astro.props;
+---
+
+{isSpotlight ? (
+    <article class="spotlight">
+        <span class="kicker">{category}</span>
+        <h2 class="headline"><a href={url}>{title}</a></h2>
+        <p class="summary">{summary}</p>
+        <div class="meta" style="margin-top: 1.5rem;">
+            <span class="byline">{byline}</span> &bull; <span class="timestamp">{timestamp}</span>
+        </div>
+    </article>
+) : (
+    <article class="article-card">
+        <span class="kicker">{category}</span>
+        <h3 class="headline"><a href={url}>{title}</a></h3>
+        <p class="summary">{summary}</p>
+        <div class="meta" style="margin-top: 1rem;">
+            <span class="byline">{byline}</span> &bull; <span class="timestamp">{timestamp}</span>
+        </div>
+    </article>
+)}
