@@ -4,7 +4,7 @@ summary: "Following her departure from Progressive Caprica, former Prime Ministe
 category: "News"
 author: "By Ecologica Political Desk"
 timestamp: "6 March 2066, 09:00"
-isSpotlight: true
+isSpotlight: false
 ---
 
 From their headquarters at 110 Acton Circle, Montiablo, the steering committee of Caprica's newest political force has officially planted its flag. As Ecologica launches its inaugural issue today, we look back at the Democratic Greens of Caprica (DGC), which formally emerged on July 12, 2065, ending weeks of speculation following the fracture within Progressive Caprica.

@@ -5,8 +5,9 @@ import { getCollection } from 'astro:content';
 
 const allArticles = await getCollection('articles');
 
-// Sort by date (assuming we want newest first, though timestamps are strings. We will just sort them alphabetically for now, or assume the order returned/parsed. Since we have standard timestamps, let's just parse them or use a simple order).
-// For simplicity, we just use the spotlight flag and grab the rest.
+// Sort articles chronologically (newest first) by parsing the Caprican timestamps
+allArticles.sort((a, b) => new Date(b.data.timestamp).valueOf() - new Date(a.data.timestamp).valueOf());
+
 const spotlightArticle = allArticles.find(a => a.data.isSpotlight) || allArticles[0];
 const gridArticles = allArticles.filter(a => a.id !== spotlightArticle.id).slice(0, 2);
 ---

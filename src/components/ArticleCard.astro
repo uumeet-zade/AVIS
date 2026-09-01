@@ -18,7 +18,7 @@ const { title, url, category, summary, byline, timestamp, isSpotlight = false } 
         <h2 class="headline"><a href={url}>{title}</a></h2>
         <p class="summary">{summary}</p>
         <div class="meta" style="margin-top: 1.5rem;">
-            <span class="byline">{byline}</span> &bull; <span class="timestamp">{timestamp}</span>
+            <span class="byline">{byline}</span>
         </div>
     </article>
 ) : (
@@ -27,7 +27,7 @@ const { title, url, category, summary, byline, timestamp, isSpotlight = false } 
         <h3 class="headline"><a href={url}>{title}</a></h3>
         <p class="summary">{summary}</p>
         <div class="meta" style="margin-top: 1rem;">
-            <span class="byline">{byline}</span> &bull; <span class="timestamp">{timestamp}</span>
+            <span class="byline">{byline}</span>
         </div>
     </article>
 )}

@@ -4,7 +4,11 @@ import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 
 const allArticles = await getCollection('articles');
-// Chronological feed of the 3 most recent articles (we just take the first 3 for now)
+
+// Sort chronologically
+allArticles.sort((a, b) => new Date(b.data.timestamp).valueOf() - new Date(a.data.timestamp).valueOf());
+
+// Chronological feed of the 3 most recent articles
 const currentArticles = allArticles.slice(0, 3);
 ---
 
